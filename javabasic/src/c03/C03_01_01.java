@@ -33,6 +33,60 @@ public class C03_01_01 {
 //		byte b1 = -b; // error 발생
 		int r3 = -b;
 		
-		// 2.증감 연산자(++, --)☆
+		// 증감 연산자(++, --)☆☆☆: 변수의 값을 1만큼 증가(++) 감소(--) 시키는 연산자
+		// boolean 타입을 제외한 모든 기본 타입에 사용 가능
+		// 연산식/설명
+		// ++피연산자/다른 연산을 수행하기 전에 피연산자의 값을 1 증가
+		// --피연산자/다른 연산을 수행하기 전에 피연산자의 값을 1 감소
+		// 피연산자++/다른 연산을 수행한 후 피연산자의 값을 1 증가
+		// 피연산자--/다른 연산을 수행한 후 피연산자의 값을 1 감소
+		
+		// ++연산자(증가연산자)는 피연산자의 값에 1을 더해서 다시 피연산자에 저장
+		int num1 = 5; 
+		++num1; // num1 = num1 + 1;
+		
+		// --연산자(감소연산자)는 피연산자의 값에 1을 빼서 다시 피연산자에 저장 
+		int num2 = 5; 
+		--num2; // num1 = num1 - 1;
+		
+		int num3 = 5;
+		++num3;
+		++num3;
+		--num3;
+		System.out.println(num3);
+		
+		int num4 = 5;
+		System.out.println(++num4); // 6 
+		System.out.println(num4++); // 6 
+		System.out.println(num4); // 7 
+		System.out.println(num4--); // 7 
+		System.out.println(--num4); // 5
+		
+		// 논리 부정 연산자(!) not: boolean 타입의 true를 false로, false를 true로 변경
+		boolean b1 = true;
+		boolean b2 = false;
+		System.out.println(!b1); // false
+		System.out.println(!b2); // true
+		
+		// 논리 부정 연산자는 조건문과 제어문에서 조건식의 값을 바꿔 실행 흐름을 제어할 때 주로 사용
+		if(true) {
+			//()안의 값이 true면 실행되는 블록
+		}
+		else {
+			//()안의 값이 false면 실행되는 블록
+		}
+		
+		int num5 =5;
+		boolean b3 = num5 < 3; // false
+		if(!b3) { // true
+			// else 대신 부정으로 조건문 실행 가능
+			System.out.println("b3는 3보다 작다");
+		}
+		//두 가지 상태(true/false)를 번갈아가며 변경하느 토글(toggle)기능을 구현할 때도 사용
+		boolean play = true;
+		play = !play; 
+		System.out.println(play); // false
+		play = !play; 
+		System.out.println(play); // true
 	}
 }
