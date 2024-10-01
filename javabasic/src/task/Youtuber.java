@@ -31,6 +31,16 @@ public class Youtuber {
 		youtuberArray[2] = youtuber3;
 		youtuberArray[3] = youtuber4;
 		youtuberArray[4] = youtuber5;
+		
+		for(Youtuber yt:youtuberArray) {
+			System.out.println("유튜버");
+			System.out.println("유튜브명: " + yt.name); 
+			System.out.println("분류: " + yt.sort);		
+			System.out.println("링크: " + yt.link);
+			System.out.println("구독자 수: " + yt.subscriber);
+			System.out.println("선호도: " + yt.preference);
+			System.out.println();
+			}
+		}
 	}
 
-}

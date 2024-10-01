@@ -1,5 +1,7 @@
 package task;
 
+import c06.NetflixContent;
+
 public class Hobby {
 	String name;
 	String sort;
@@ -44,5 +46,15 @@ public class Hobby {
 		hobbyArray[2] = hobby3;
 		hobbyArray[3] = hobby4;
 		hobbyArray[4] = hobby5;
+		
+		for(Hobby hA:hobbyArray) {
+			System.out.println("내 취미");
+			System.out.println("취미명: " + hA.name); 
+			System.out.println("분류: " + hA.sort);		
+			System.out.println("장소: " + hA.place);
+			System.out.println("시작 년도: " + hA.startYear);
+			System.out.println("선호도: " + hA.preference);
+			System.out.println();
+		}
 	}
 }

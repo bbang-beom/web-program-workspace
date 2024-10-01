@@ -9,7 +9,7 @@ public class Member {
 //	Member(String name) {
 //		// 생성자
 //	}
-	
+		
 	void setName(String name) {
 		// 메서드
 	}
