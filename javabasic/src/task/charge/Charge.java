@@ -26,9 +26,9 @@ public class Charge {
 					Charge charge = new Charge();
 					charge.payCharge(new Bus(), age);
 				}
-			}catch(StringIndexOutOfBoundsException e) {
+			} catch(StringIndexOutOfBoundsException e) {
 				System.out.println("주민번호 자리에 맞게 입력하세요");
-			}catch (NumberFormatException e) {
+			} catch (NumberFormatException e) {
 				System.out.println("정수를 입력하지 않았습니다.");
 				continue;
 			}
