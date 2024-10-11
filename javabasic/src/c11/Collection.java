@@ -33,6 +33,11 @@ public class Collection {
 		List<String> list = new ArrayList<String>();
 		list.add("홍길동");
 		String s1 = list.get(0);
+		
+		//foreach문 사용
+		for(String s:list) {
+			System.out.println(s);
+		}
 	}
 	
 }
