@@ -17,7 +17,7 @@ public class ShoppingListApp {
 			case 1:
 				System.out.print("다이소 물품 이름: ");
 				String name = scanner.nextLine();
-				ShoppingList sl = new Daiso();
+				ShoppingList sl = new Daiso(name);
 				sl.setName(name);
 				slr.createSL(sl);
 				System.out.println(name + " 물품이 등록되었습니다.");
@@ -25,7 +25,7 @@ public class ShoppingListApp {
 			case 2:
 				System.out.print("마트 물품 이름: ");
 				String name1 = scanner.nextLine();
-				ShoppingList sl1 = new Mart();
+				ShoppingList sl1 = new Mart(name1);
 				sl1.setName(name1);
 				slr.createSL(sl1);
 				System.out.println(name1 + " 물품이 등록되었습니다.");
